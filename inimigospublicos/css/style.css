@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+
+}
+
+body{
+    font-family: "ChineseRock";
+    background-color: rgb(76, 62, 31);
+    background-image: url(/imgs/bg3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden !important; 
+}
+
+
+@font-face {
+    font-family: "ChineseRock";
+    src: url("/rg.otf") format("opentype");
+  }
+
+.enemies{
+    color: white;
+    text-align: center;
+}
+.ini{
+    padding: 1px;
+    background-color: red;
+    font-size: 30px;
+}
+.pub{
+    color: white;
+    -webkit-text-stroke: .8px black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    background-color: transparent;
+    font-size: 1.5em;
+}
+
+.doe{
+    color: white;
+}
+.line1,.line2{
+    border: solid rgba(255, 255, 255, 0.219) 1px;
+    width: 500px;
+
+}
+
+.listhome{
+    display: flex;
+    text-align: center;
+
+}
+.listhome li{
+    padding-left: 25px;
+    padding-right: 25px;
+    list-style: none;
+}
+.listhome li a{
+    color: white;
+    transition: ease-in-out .55s all;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.listhome li a:hover{
+    border-bottom: solid 1px white;
+}
+
+
+.section-university{
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+
+    width: 100vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+.aboutpage{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: ease all .55s;
+}
+.aboutpage h1{
+    font-size: 120px;
+    text-align: center;
+    color: white;
+
+}
+
+.uni{
+  border-top: solid 4px white;
+
+}
+.aboutpage p{
+    color: white;
+    width: 655px;
+    font-size: 20px;
+    white-space:pre-line;
+    display: block;
+    width:auto;
+}
+
+.aboutpage div{
+  width: 600px;
+  display: block;
+  white-space:pre-line;
+}
+.line3{
+    height: 850px;
+    margin-left: 100px;
+    margin-top: 120px;
+    border: solid rgba(255, 255, 255, 0.219) 1px;
+}
+.line4{
+    height: 850px;
+    margin-right: 100px;
+    margin-top: 120px;
+    border-left: solid rgba(255, 255, 255, 0.219) 1px;
+}
+
+footer{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 95px;
+    align-items: center;
+}
+
+#you{
+    width: 30px;
+}
+#vaca{
+    width: 100px;
+    filter: invert(0);
+}
+
+.redesociais img{
+    width: 20px;
+    filter: invert(100%);
+}
+
+.line5{
+    width: 1690px;
+    border-bottom: solid rgba(255, 255, 255, 0.219) 1px;
+    padding-bottom: 10px;
+    margin-left: 80px;
+
+}
+
+.listhome img{
+  width: 40px;
+  display: none;
+  filter: invert(100%);
+}
+.redesociais {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.redesociais li{
+    padding-left: 10px;
+}
+
+.universities img{
+    width: 100%;
+    height: 100%;
+}
+.university {
+    width: 600px;
+    height: 600px;
+    margin-top: 240px;
+    margin-left: 50px;
+}
+.universities{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.universities li{
+    list-style: none;
+    width: 200px;
+    height: 150px;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+@media(max-width:880px){
+  .aboutpage h1{
+    font-size: 80px;
+  }
+
+  .aboutpage div{
+    width: 500px;
+  }
+  .listhome a{
+    display: none;
+  }
+  .listhome img{
+    display: block;
+  }
+
+  .doe{
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 680px){
+  .aboutpage h1{
+    font-size: 60px;
+  }
+
+  .aboutpage div{
+    width: 300px;
+  }
+  header{
+    flex-direction: column;
+  }
+  .line1,.line2{
+    display: none;
+  }
+  .section-university{
+    padding: 0;
+
+  }
+  .line3{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width: 680px){
+
+  .line3{
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 680px){
+
+  .line3{
+    margin-left: 40px;
+  }
+}
